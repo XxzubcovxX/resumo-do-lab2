@@ -1,2 +1,1 @@
-# resumo-do-lab2
-Ativade de curso de Azure da DIO 
+# Aqui nesse repositório vai ter como eu criei uma Maquina vitual na Azure 
