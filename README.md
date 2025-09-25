@@ -1,46 +1,50 @@
-# Aqui nesse repositório vai ter como eu criei uma Maquina vitual na Azure 
-Repositório criado para o desafio de projeto da [DIO](https://www.dio.me/).
+# Desafio de Projeto: Criando uma Máquina Virtual no Azure
 
-## 📝 Descrição do Desafio
+Repositório criado para o desafio de projeto da [DIO](https://www.dio.me/) sobre a criação de uma Máquina Virtual (VM) no Microsoft Azure.
 
-O objetivo deste desafio é consolidar os conhecimentos sobre máquinas virtuais no Microsoft Azure, documentando o processo de criação e configuração.
+## 📝 Descrição
 
-## 🚀 Passo a Passo
+Este projeto documenta o passo a passo para criar e configurar uma máquina virtual com o sistema operacional Ubuntu Server 24.04 LTS através do portal do Azure.
 
-Aqui você vai detalhar o processo. Use os prints que você tirou!
+## 🚀 Passo a Passo da Criação
 
-### 1. Acesso ao Portal do Azure e Criação do Recurso
+### 1. Acesso ao Portal do Azure
+O processo se inicia na página inicial do Microsoft Azure, onde temos uma visão geral dos serviços disponíveis. A partir daqui, navegamos para a seção de Máquinas Virtuais para dar início à criação do nosso recurso.
 
-Descreva como você acessou o portal e iniciou a criação da máquina virtual.
 
-*(Insira aqui o print da tela inicial de criação da VM)*
 
-### 2. Configurações Básicas
+### 2. Navegação para o Serviço de Máquinas Virtuais
+Na página inicial, selecionamos o serviço "Máquinas Virtuais". Esta ação nos leva ao painel de gerenciamento, onde todas as máquinas virtuais existentes são listadas e onde podemos iniciar a criação de uma nova.
 
-Detalhe as escolhas que você fez, como nome da máquina, imagem (sistema operacional) e credenciais de administrador.
 
-*(Insira aqui o print da aba de configurações básicas)*
+### 3. Início da Criação da VM
+No painel de Máquinas Virtuais, como nenhuma máquina foi criada ainda, a tela nos apresenta a opção para criar uma nova. Clicamos no botão "Criar" para sermos direcionados ao assistente de configuração.
 
-### 3. Configuração de Discos e Rede
 
-Explique brevemente as configurações de disco e rede (pode mencionar que usou o padrão e a importância da porta RDP).
 
-*(Insira aqui um print relevante, como o da configuração de rede)*
+### 4. Configurações Básicas da Instância
+Nesta etapa, definimos as configurações essenciais do projeto e da instância.
+- **Grupo de Recursos:** Criamos um novo grupo chamado `teste_group`.
+- **Nome da Máquina Virtual:** Nomeamos nossa VM como `teste`.
+- **Região:** Escolhemos a região `West Europe` para hospedar nosso recurso.
 
-### 4. Revisão e Criação
 
-Mostre a tela de revisão final antes de criar a máquina.
 
-*(Insira aqui o print da tela de "Revisar + criar")*
+### 5. Definição da Imagem e Conta de Administrador
+Dando continuidade à configuração, definimos:
+- **Imagem:** Selecionamos a imagem `Ubuntu Server 24.04 LTS - Gen2` como sistema operacional.
+- **Tamanho:** Optamos pelo tamanho `Standard_B1s`, que é elegível nos serviços gratuitos.
+- **Autenticação:** Escolhemos o tipo de autenticação por `Chave pública SSH`, definindo o nome de usuário como `azureuser` e o nome do par de chaves como `Andre`.
+- **Portas de Entrada:** Permitimos a porta `HTTP`, além da porta SSH que já é padrão.
 
-### 5. Conexão com a Máquina Virtual
 
-Descreva como você se conectou à máquina virtual usando a Conexão de Área de Trabalho Remota (RDP) e confirme que o acesso foi bem-sucedido.
 
-*(Insira aqui o print final da área de trabalho da sua VM do Azure funcionando!)*
+### 6. Máquina Virtual Criada com Sucesso!
+Após revisar e confirmar todas as configurações, a máquina virtual é provisionada e entra em execução. A tela final nos mostra um resumo completo da VM "teste", confirmando que o status está "Em execução" e apresentando informações importantes como o endereço IP público para conexão.
+
+
 
 ## 🛠️ Ferramentas Utilizadas
-
-* Microsoft Azure
-* GitHub
-* Windows
+- [Microsoft Azure](https://portal.azure.com/)
+- [Markdown](https://www.markdownguide.org/)
+- [GitHub](https://github.com/)
